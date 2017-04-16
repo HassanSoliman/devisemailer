@@ -145,7 +145,8 @@
     <div class="well">
         <h4>Recent Posts</h4>
         <% @articles.each do |a| %>
-        <strong><%= link_to a.title, a %></strong>
+        
+        <strong><%= link_to a.title, a %><span style="float:right">posted by: <%= a.user.username %></span></strong>
         <p>    <%= truncate(a.body) %>     </p>
         <% end %>    
             
