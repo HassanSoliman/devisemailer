@@ -1,4 +1,4 @@
 git add -A
-git commit -m "setting production end to heroku"
+git commit -m "mail change"
 git push origin master
 git push heroku master
